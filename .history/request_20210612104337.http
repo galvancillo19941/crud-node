@@ -1,0 +1,13 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "los 1 pecados capitales",
+    "autor": "jesus galvan",
+    "ediccion": 1
+}

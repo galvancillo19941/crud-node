@@ -1,0 +1,51 @@
+###
+GET http://localhost:9000/api/books HTTP/1.1
+
+
+###
+POST http://localhost:9000/api/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "samurai X",
+    "autor": "carmen gonzalez",
+    "ediccion": 2
+}
+
+
+###
+PUT http://localhost:9000/api/books/34 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "one puch man",
+    "autor": "jesus M",
+    "ediccion": 2
+}
+
+###
+DELETE http://localhost:9000/api/books/33 HTTP/1.1
+
+
+
+
+###
+POST http://localhost:9000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Angie",
+    "email": "carmen12@mail.com",
+    "password": "1234"
+}
+
+
+###
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "galvan11@gmail.com",
+    "password": "123"
+}
+

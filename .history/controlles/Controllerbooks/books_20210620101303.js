@@ -1,0 +1,21 @@
+const ModelBooks = require('../../model/modelBooks/books')
+
+
+module.exports = {
+    booksGet: function(req, res) {
+        ModelBooks.get(req.con, function(err, rows) {
+            if(err) {
+                oRes.write(JSON.stringify({
+                    error: true,
+                    error_object: oError         
+                  }));
+                  oRes.end();
+            } else {
+                res.status(200).json({
+                    statusCode: 200,
+                    data: rows
+                });
+            }
+        })
+      },
+}

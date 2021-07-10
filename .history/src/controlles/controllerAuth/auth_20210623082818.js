@@ -1,0 +1,1 @@
+const ModelAuth = require('../../controlles/controllerAuth/auth')

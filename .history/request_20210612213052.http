@@ -1,0 +1,48 @@
+###
+GET http://localhost:9000/api/books HTTP/1.1
+
+
+###
+POST http://localhost:9000/api/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Dragon ball Z",
+    "autor": "Jesus Galvan",
+    "ediccion": 4
+}
+
+
+###
+DELETE http://localhost:9000/api/books/6 HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "los 1 pecados capitales",
+    "autor": "Jesus Galvans",
+    "ediccion": 1
+}
+
+###
+POST http://localhost:9000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jesus",
+    "email": "galvan11@gmail.com",
+    "password": "1234"
+}
+
+
+###
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "galvan122@gmail.com",
+    "password": "123"
+}
